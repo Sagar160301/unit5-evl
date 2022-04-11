@@ -119,7 +119,7 @@ function App() {
         {/* Increase the total number of balls thrown here. */}
         <button
           onClick={() => {
-            if (india.Score <= 100 && india.Wicket < 12) {
+            if (india.Score <= 100) {
               let ball = india.Ball + 1;
               updateData("Ball", ball);
             }
