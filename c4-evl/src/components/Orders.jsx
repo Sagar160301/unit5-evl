@@ -25,7 +25,7 @@ export const Orders = () => {
       let res = await fetch("http://localhost:8080/orders");
       let data = await res.json();
       dispatch(AllData(data));
-      setAllData(all);
+      setAllData(data);
       setR(!rand);
       //   console.log(data);
     } catch (error) {
@@ -51,7 +51,7 @@ export const Orders = () => {
     }
   };
   const changeCost = async (id, key, value) => {
-    let obj = { [key]: value };
+    let obj = { [key]: value, status: "In Progress" };
     try {
       let res = await fetch(`http://localhost:8080/orders/${id}`, {
         method: "PATCH",
@@ -124,11 +124,10 @@ export const Orders = () => {
                           <button
                             onClick={(e) => {
                               changeCost(
-                                e.id,
+                                el.id,
                                 "cost",
-                                Math.round(Math.random(1, 1000))
+                                Math.round(Math.random(100, 1000))
                               );
-                              changeStatus(el.id, "status", "In Progress");
                             }}
                           >
                             Accept

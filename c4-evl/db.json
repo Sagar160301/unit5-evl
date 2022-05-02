@@ -40,7 +40,7 @@
       "owner_name": "Allan Doe",
       "brand": "Lenovo",
       "cost": 344.15,
-      "status": "Done"
+      "status": "In Progress"
     },
     {
       "id": 3,
@@ -72,15 +72,14 @@
       "owner_name": "John Doe",
       "brand": "MacBook Pro",
       "cost": 393.37,
-      "status": "Done"
+      "status": "In Progress"
     },
     {
       "id": 7,
       "problem": "SSD upgrade",
       "owner_name": "Adam Smith",
       "brand": "HP",
-      "cost": 475,
-      "status": "Done"
+      "status": "Not Accepted"
     },
     {
       "id": 8,
@@ -110,15 +109,17 @@
       "problem": "test",
       "brand": "1",
       "owner_name": "John Doe",
-      "status": "Not Accepted",
-      "id": 11
+      "status": "In Progress",
+      "id": 11,
+      "cost": 400
     },
     {
       "owner_name": "John Doe",
-      "status": "Not Accepted",
+      "status": "In Progress",
       "problem": "react",
       "brand": "rrr",
-      "id": 12
+      "id": 12,
+      "cost": 1
     }
   ]
 }
